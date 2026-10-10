@@ -1,0 +1,6 @@
+token: "PASTE_YOUR_BOT_TOKEN_HERE"
+prefix: "!"
+ownerId: 0
+djRoleId: 0
+skipRatio: 0.55
+proxy: ""

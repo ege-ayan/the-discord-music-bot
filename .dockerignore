@@ -1,0 +1,8 @@
+.git
+.gradle
+.idea
+build
+dist
+config.yml
+.env
+.env.*

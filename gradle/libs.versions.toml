@@ -1,0 +1,43 @@
+[versions]
+jda = "6.7.0"
+jdave = "0.1.8"
+lavaplayer = "2.2.7"
+youtube-source = "1.18.2"
+jackson = "3.2.3"
+slf4j = "2.0.20"
+logback = "1.6.5"
+jspecify = "1.0.1"
+junit = "6.1.3"
+assertj = "3.27.7"
+mockito = "5.24.0"
+shadow = "9.6.1"
+spotless = "8.10.4"
+
+[libraries]
+jda = { module = "net.dv8tion:JDA", version.ref = "jda" }
+jdave-api = { module = "club.minnced:jdave-api", version.ref = "jdave" }
+jdave-native-darwin = { module = "club.minnced:jdave-native-darwin", version.ref = "jdave" }
+jdave-native-linux-x86-64 = { module = "club.minnced:jdave-native-linux-x86-64", version.ref = "jdave" }
+jdave-native-linux-aarch64 = { module = "club.minnced:jdave-native-linux-aarch64", version.ref = "jdave" }
+jdave-native-win-x86-64 = { module = "club.minnced:jdave-native-win-x86-64", version.ref = "jdave" }
+lavaplayer = { module = "dev.arbjerg:lavaplayer", version.ref = "lavaplayer" }
+youtube-source = { module = "dev.lavalink.youtube:common", version.ref = "youtube-source" }
+jackson-bom = { module = "tools.jackson:jackson-bom", version.ref = "jackson" }
+jackson-databind = { module = "tools.jackson.core:jackson-databind" }
+jackson-yaml = { module = "tools.jackson.dataformat:jackson-dataformat-yaml" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+jspecify = { module = "org.jspecify:jspecify", version.ref = "jspecify" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-junit = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
+
+[bundles]
+jdave-natives = ["jdave-native-darwin", "jdave-native-linux-x86-64", "jdave-native-linux-aarch64", "jdave-native-win-x86-64"]
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
